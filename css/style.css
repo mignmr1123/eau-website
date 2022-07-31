@@ -1,0 +1,422 @@
+@charset "utf-8";
+
+/* 共通設定 */
+
+body,p,ul,li,h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "メイリオ", "sans-serif";
+    text-align: center;
+    line-height: 2;
+    -webkit-text-size-adjust: 100%;
+}
+
+header{
+    margin-bottom: 10px;
+}
+.nav1{
+    display:flex;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    transition-duration: 0.6s;
+}
+
+h1{
+    color: #fff;
+    font-size: 80%;
+}
+
+#top-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+#top-img h1{
+    padding-top: 10px;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+footer{
+    font-size: 60%;
+    background-color: #8DBAD9;
+    margin-top: 50px;
+}
+
+/* グローバルナビ設定 */
+.nav1 p{
+    display: inline-block;
+    font-size: 80%;
+    font-weight: bold;
+}
+
+.nav1 a:link{
+    color: #444F4F;
+}
+
+.nav1 a:visited{
+    color: #a9aaaa;
+}
+
+.nav1 a:hover{
+    color: #fff;
+    background-color: #B4D1D8;
+}
+
+/* 予約ページリンクボタン設定 */
+#reserve-here{
+    display: block;
+    font-size: 70%;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    margin: 30px auto 0;
+    padding: 20px 20px;
+    background-color: #58add8;
+    border-radius: 50px;
+}
+
+#reserve-here:link{
+    color: #fff;
+}
+
+#reserve-here:visited{
+    color: #ccc;
+}
+
+#reserve-here:hover{
+    color: #fff;
+    background-color: #81b9d4;
+}
+
+/* トップページ設定 */
+#index #top-img{
+    background-image: url(../img/top-top.jpg);
+    height: 427px;
+}
+
+#timer{
+    margin: 20px 0;
+}
+
+#intro{
+    width: 340px;
+    padding: 10px 0;
+    margin: 10px auto;
+    background-color:#b6d9f0;
+    border: #ccc double 5px;
+}
+
+#intro h2{
+    color: #fff;
+    padding-bottom: 10px;
+    border-bottom: double 6px #81b9d4;
+}
+
+#intro p{
+    font-size: 75%;
+    padding-top: 20px;
+}
+#intro strong{
+    font-weight: bold;
+    text-decoration: underline double 1px #f00;
+    text-underline-offset: 3px;
+}
+table{
+    text-align: left;
+    margin: 35px auto 25px auto;
+}
+
+caption{
+    font-size: 110%;
+    font-weight: bold;
+    text-align: center;
+}
+
+th{
+    font-weight: normal;
+}
+
+table span{
+    font-size: 80%;
+}
+
+#index iframe{
+    margin-top: 15px;
+    width: 340px;
+}
+
+/* メニューページ設定 */
+#menu #top-img{
+    background-image: url(../img/menu-top.jpg);
+    height: 427px;
+}
+#menu-nav{
+    margin: 40px 0;
+}
+#menu-nav span{
+    background-color: #94bfd4;
+    font-size: 90%;
+    padding: 10px 20px;
+}
+
+#menu-nav li{
+    margin:30px 0;
+    color: #fff;
+    font-weight: bolder;
+}
+
+#menu-nav a:link{
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu-nav a:visited{
+    text-decoration: underline;
+    color: #7b8f8f;
+}
+
+#menu-nav a:hover{
+    color: #005783;
+}
+
+#menu-nav li #dinner-menu{
+    padding: 10px 14px;
+}
+
+#menu h2{
+    font-size: 120%;
+    color: #444F4F;
+    border-bottom: #81b9d4 double 5px;    
+    width: 160px;
+    margin: 50px auto 10px;
+}
+
+.attention{
+    font-size: 60%;
+    width: 90%;
+    margin: 20px auto 0;
+}
+
+.attention ul{
+    width: 270px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+#menu article img{
+    margin-top: 70px;
+    max-width: 519px;
+}
+
+@media screen and (max-width:520px) {
+    #kids img, #lunch img, #cafe img, #dinner img {
+        width: 90%;
+    }
+}
+
+#menu .adjust{
+    margin-top: 30px;
+}
+
+section ul li{
+    font-size: 90%;
+}
+
+.description{
+    width: 170px;
+    text-align: left;
+    margin: 0 auto;
+}
+.detail-description{
+    font-size: 90%;
+}
+
+/* 店内写真ページ設定*/
+#inside #top-img{
+    background-image: url(../img/inside/inside-top.jpg);
+    height: 445px;
+}
+
+#inside h2{
+    font-size: 120%;
+    color: #444F4F;
+    border-bottom: #81b9d4 double 5px;    
+    width: 100px;
+    margin: 70px auto 0px;
+    }
+
+#inside #description{
+    margin: 20px 0;
+    font-size: 70%;
+}
+
+#inside article img{
+    width: 90%;
+    margin-top: 50px;
+    max-width: 519px;
+}
+    
+#inside .adjust{
+        margin-top: 10px;
+    }
+
+/* 予約＆お問い合わせページ */
+#reserve #top-img{
+    background-image: url(../img/reserve-top.jpg);
+    height: 360px;
+}
+
+#reserve-nav{
+    width: 140px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#reserve-nav img{
+    margin-right: 10px;
+}
+
+#reserve-nav a{
+    display: flex;
+    padding-top: 10px;
+}
+
+#reserve-nav p, #reserve-nav .site-name{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#reserve-nav li{
+    margin-top: 20px;
+}
+
+#reserve-nav a:link{
+    color: #444F4F;
+}
+
+#reserve-nav a:visited{
+    color: #a9aaaa;
+}
+
+#reserve-nav a:hover{
+    color: #fff;
+    background-color: #B4D1D8;
+} 
+
+.site-name{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+#reserve h2{
+    font-size: 120%;
+    color: #444F4F;
+    border-bottom: #81b9d4 double 5px;    
+    width: 120px;
+    margin: 50px auto 30px;
+    }
+
+#reserve .adjust{
+    margin-top: 60px;
+}
+
+.required{
+    color:#f00;
+    font-size: 80%;
+}
+
+#form-box{
+    font-size: 80%;
+    width: 200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#form-box p{
+    margin-bottom: 20px;
+}
+
+textarea{
+    width: 200px;
+}
+
+
+/* ハンバーガーメニュー */
+#open_nav{
+    text-align: right;
+    margin: 10px;
+    position:fixed;
+    right: 0;
+    top: 0;
+}
+.site-menu-content{
+    font-weight: bold;
+    font-size: 80%;
+    padding: 10px 5px;
+    text-align: left;
+    background-color: #8DBAD9;
+}
+
+.site-menu-content li{
+    margin: 20px 10px;
+    width: 120px;
+}
+.site-menu-content a:link{
+    color: #fff;
+}
+
+.site-menu-content a:visited{
+    color: #003558;
+}
+
+#nav{
+    display:none;
+    position: fixed;
+    right: 0px;
+    top: 60px;
+    width: 140px;
+    height: 100%;
+}
+
+/* 開く・閉じるアニメーション */
+#nav{
+    transition: transform 1s;
+}
+
+/* TOP↑ボタン */
+.top-btn{
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    font-size: 77%;
+    font-weight: bold;
+} 
+
+.top-btn a{   
+    background:rgba(125, 180, 218, 0.8);
+    text-decoration: none;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 35px;
+}
+.top-btn a:hover {
+    text-decoration: none;
+    background:rgba(24, 69, 99, 0.8);
+   } 

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="EAU編集部">
+    <meta name="description" content="カフェレストラン　EAUのご予約＆お問い合わせページです。HOT PEPPERと食べログサイトから予約可能です。その他、ご質問やご相談はお問い合わせフォームからお問い合わせ可能です。">
+    <meta name="keywords" content="三宮,お問い合わせ,カフェレストランEAU,予約">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="カフェレストラン　EAU　〜ご予約＆お問い合わせ〜" />
+    <!-- 要設定　<meta property="og:url" content=" ページのurl" /> -->
+    <meta property="og:description" content="カフェレストラン　EAUの予約＆お問い合わせページです。HOT PEPPERと食べログサイトから予約可能です。その他、ご質問やご相談はお問い合わせフォームからお問い合わせ可能です。" />
+    <!-- 要設定　<meta property="og:image" content=" サムネイル画像の URL" /> -->
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:site_name" content="カフェレストラン　EAU" />
+
+    <title>カフェレストラン　EAU　〜ご予約＆お問い合わせ〜</title>
+
+    <link rel="stylesheet" href="css/style.css" media="screen" and(min-width:375px)> 
+</head>
+
+<body id="reserve">
+    <div id="wrapper">
+    <header>
+        <p>
+            <a href="index.html">
+                <img src="img/logo/eau-logo1.png" alt="カフェレストランEAUロゴで" width="170" height="170">
+            </a>
+        </p>
+
+        <nav>
+            <div class="nav1">
+            <p><a href="index.html">Top</a></p>
+            <p><a href="menu.html">Menu</a></p>
+            <p><a href="inside.html">Inside Restaurant</a></p>
+            <p><a href="reserve.html">Reserve & Contact</a></p>
+            </div>
+        </nav>
+    </header>
+
+    <article>
+        <div id="top-img">
+        <h1>Reserve & Contact</h1>
+        </div>
+
+    <section>
+    <h2>予約サイト</h2>
+
+    <ul id="reserve-nav">
+        <li>
+            <a href="#">
+                <p><img src="img/logo/hotpepper.png" width="32" height="32" alt="hotpepperロゴ"></p>
+                <div class="site-name">HOT PEPPER</div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <p><img src="img/logo/tabelog.png" width="32" height="32" alt="食べログロゴ"></p>
+                <div class="site-name">食べログ</div>
+            </a>
+        </li>
+    </ul>
+    </section>
+
+    <section>
+        <h2 class="adjust">お問い合わせ</h2>
+        <form action="#" method="post" enctype="text/plain">
+            <div id="form-box">
+            <p>
+                <label for="name">お名前<span class="required">（必須）</span><br>
+                    <input type="text" name="name" placeholder="全角で入力してください" required>
+                </label>
+            </p>
+            <p>
+                <label for="email">メールアドレス<span class="required">（必須）</span><br>
+                    <input type="email" name="email" placeholder="半角で入力してください" required>
+                </label>
+            </p>
+            <p>
+                <label for="comment">
+                    お問い合わせ＆ご相談内容<span class="required">（必須）</span><br>
+                    <textarea name="comment" placeholder="できるだけ具体的にご記入お願いいたします"></textarea>
+                </label>
+            </p>
+            </div>
+            <input type="submit" value="送信">
+            <input type="reset" value="リセット">
+        </form>
+    </section>
+    </article>
+
+<!-- ハンバーガーメニュー -->
+    <p id="open_nav">
+        <img src="img/sitemenu-btn.png" alt="メニューボタン" width="40px" height="40px">
+    </p>
+
+    <nav id="nav">
+        <ul class="site-menu-content">
+            <li><a href="index.html">Top</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="inside.html">Inside Restaurant</a></li>
+            <li><a href="reserve.html">Reserve & Contact</a></li>
+        </ul>
+    </nav>
+
+<!-- TOPボタン -->
+    <div class="top-btn">
+        <a href="#">TOP↑</a>
+    </div>
+
+    <footer>
+        <small>Copyright&nbsp;&copy;&nbsp;2022&nbsp;EAU&nbsp;All&nbsp;Right&nbsp;Reserved.</small>
+    </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="btn.js"></script>
+    <script src="smoothscroll.js"></script>
+</body>
+</html>
