@@ -17,13 +17,6 @@ body {
 header{
     margin-bottom: 10px;
 }
-.nav1{
-    display:flex;
-    width: 100%;
-    max-width: 640px;
-    margin: 0 auto;
-    justify-content: space-around;
-}
 
 a{
     text-decoration: none;
@@ -55,6 +48,14 @@ footer{
 }
 
 /* グローバルナビ設定 */
+.nav1{
+    display:flex;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
 .nav1 p{
     display: inline-block;
     font-size: 80%;
@@ -230,7 +231,7 @@ table span{
     margin-top: 30px;
 }
 
-section ul li{
+section ul li, .detail-description{
     font-size: 90%;
 }
 
@@ -239,9 +240,7 @@ section ul li{
     text-align: left;
     margin: 0 auto;
 }
-.detail-description{
-    font-size: 90%;
-}
+
 
 /* 店内写真ページ設定*/
 #inside #top-img{
@@ -326,19 +325,21 @@ section ul li{
     border-bottom: #81b9d4 double 5px;    
     width: 120px;
     margin: 50px auto 30px;
-    }
+}
 
 #reserve .adjust{
     margin-top: 60px;
 }
 
-.required{
-    color:#f00;
+.required, #form-box{
     font-size: 80%;
 }
 
+.required{
+    color:#f00;
+}
+
 #form-box{
-    font-size: 80%;
     width: 200px;
     margin: 0 auto;
     text-align: left;
@@ -352,17 +353,20 @@ textarea{
     width: 200px;
 }
 
+/* サイドボタン共通設定 */
+#open_nav, #nav, .top-btn{
+    position: fixed;
+    font-weight: bold;
+}
 
 /* ハンバーガーメニュー */
 #open_nav{
-    text-align: right;
     margin: 10px;
-    position:fixed;
     right: 0;
     top: 0;
 }
+
 .site-menu-content{
-    font-weight: bold;
     font-size: 80%;
     padding: 10px 5px;
     text-align: left;
@@ -383,25 +387,18 @@ textarea{
 
 #nav{
     display:none;
-    position: fixed;
     right: 0px;
     top: 60px;
     width: 140px;
     height: 100%;
-}
-
-/* 開く・閉じるアニメーション */
-#nav{
-    transition: transform 1s;
+    transition: transform 0.5s;/* 開く・閉じるアニメーション */
 }
 
 /* TOP↑ボタン */
 .top-btn{
-    position: fixed;
     bottom: 30px;
     right: 10px;
     font-size: 77%;
-    font-weight: bold;
 } 
 
 .top-btn a{   
@@ -416,7 +413,7 @@ textarea{
     vertical-align: middle;
     border-radius: 35px;
 }
+
 .top-btn a:hover {
-    text-decoration: none;
     background:rgba(24, 69, 99, 0.8);
-   } 
+} 
